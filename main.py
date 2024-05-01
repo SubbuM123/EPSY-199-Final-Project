@@ -7,9 +7,9 @@ import numpy as np
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 
-from scrape import ScrapeAnalysis
-from format import PGNtoDF
-from game_analysis import UserGM
+from DataCollection.scrape import ScrapeAnalysis
+from DataCollection.format import PGNtoDF
+from DataCollection.game_analysis import UserGM
 
 class RequestHandler(BaseHTTPRequestHandler):
     def _set_response(self):
